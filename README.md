@@ -25,7 +25,7 @@ Pregunta 3: ¿Qué variables cualitativas y cuantitativas influyen para que un e
 En primera medida existe un archivo con los de Stack Overflow de 2017 que son necsarios en el momento de la carga de base de datos, en segunda media existe un Archivo .py Jupyter Python, donde en la parte inicial da un bosquejo general de la estructura de la base de datos, en las tres secciones posteriores responde a las preguntas anteriores mediante análisis descriptivos, modelo lineal simple y modelo lineal múltiples con variables categóricas.
 
 # 4.Resultados
-Los principales hallazgos del código se pueden encontrar en la publicación disponible.
+Los principales hallazgos del código se pueden encontrar en la publicación disponible en https://gustavovenegas2010.github.io/Proyecto-1/ .
 
 # 5.Licencias, autores y reconocimientos
 El autor de este proyecto es Gustavo Venegas Segura, Estadístico con especialización en estadística de la Universidad Nacional de Colombia, que actualmente trabaja en el Banco Davivienda. Agradecimientos especiales a Jorge Andrés Escobar y Udacity por la ayuda brindada en este proyecto.
