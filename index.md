@@ -11,6 +11,10 @@ Pregunta 3: ¿Qué variables cualitativas y cuantitativas influyen para que un e
 
 ## Pregunta 1
 
+
+Imagenes/1.PNG
+
+
 Se calculo un resumen de estadísticas descriptivas de la variable _JobSatisfaction_, donde se puede visualizar que en promedio la satisfacción laboral es de 6.9 es decir que la mayoría de encuestados tienen buena satisfacción laboral. También se evidencia que el percentil 1 (25%) es 6, por consiguiente el 75% de los encuestados tienen una satisfacción laboral por encima de 6 que es aceptable, como se puede ver en las siguiente tabla, grafico de barras y diagrama caja.
 
 A continuación se realiza las siguientes tablas comparando la satisfacción laboral con el estado del empleado, el tamaño de la compañía y el país. De aquí se concluye que los empleados con menos satisfacción laboral son los que tienen contratos de tiempo completo.
