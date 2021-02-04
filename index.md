@@ -27,6 +27,8 @@ Dado que la base de datos contiene valores en null procedemos a eliminar las fil
 
 Después de realizar la regresión lineal simple observamos que el R2 es igual a 0.4170 lo que indica que la variable 'CareerSatisfaction' explica una parte de la variable 'JobSatisfaction', sin embargo después de probar con más variables en ejercicios alternos no logra incrementar su r2, por consiguiente se revisa los estadísticos Prob (F-statistic) y P_value de la variable 'CareerSatisfaction', para determinar si es significativa.
 
+También se analiza la probabilidad de la estadística F, Prob( F statistic )=0.00 es menor a 0.05% , con un nivel del 95% podemos rechazar la hipótesis nula (Ho), es decir que el modelo es explicativo, por consiguiente la variable 'CareerSatisfaction' del modelo tiene efecto en la variable de respuesta 'CareerSatisfaction' y también observamos que el p_value de la variable 'CareerSatisfaction' es 0.000, menor a 0.05%, es decir que es significativa para el modelo.
+
 Por lo anterior se concluye que el grado de satisfacción por una carrera influye en la satisfacción por el trabajo, sin embargo no es suficiente para explicar el la satisfacción por el trabajo, por consiguiente debe existir otras variables que también contribuyan para que la satisfacción por el trabajo sea mayor.
 
 ## Pregunta 3
