@@ -11,8 +11,7 @@ Pregunta 3: ¿Qué variables cualitativas y cuantitativas influyen para que un e
 
 ## Pregunta 1
 
-![Aquí la descripción de la imagen por si no carga]
-(https://github.com/gustavovenegas2010/Proyecto-1/blob/gh-pages/Imagenes/1.PNG)
+![Aquí la descripción de la imagen por si no carga](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/1.PNG)
 
 
 
