@@ -1,31 +1,32 @@
-# Tabla de contenido
-1. Instalación.
+# Table of Contents
 
-2. Motivación del proyecto.
+1. Installation.
 
-3. Descripciones de archivos.
+2. Motivation of the project.
 
-4. Resultados.
+3. File descriptions.
 
-5. Licencias, autores y reconocimientos.
+4. Results.
 
-# 1.Instalación
-Debe tener instalado la Python versión 3.*.
+5. Licenses, authors and acknowledgements.
 
-# 2.Motivación del proyecto
-Para este proyecto, estaba interesado en usar los datos de Stack Overflow de 2017 para comprender mejor:
+# Installation
+You must have Python version 3.* installed.
 
-Pregunta 1: ¿Cómo se comporta la satisfacción laboral?
+# 2.Project Motivation.
+For this project, I was interested in using the 2017 Stack Overflow data to better understand:
 
-Pregunta 2: ¿Si una persona tiene alta satisfacción por un carrera (CareerSatisfaction), también tendrá alta satisfacción por su trabajo (JobSatisfaction)?
+Question 1: How does job satisfaction behave?
 
-Pregunta 3: ¿Qué variables cualitativas y cuantitativas influyen para que un empleado tenga una alta satisfacción por su trabajo (JobSatisfaction)?
+Question 2: If a person has high satisfaction for a career (CareerSatisfaction), will they also have high satisfaction for their job (JobSatisfaction)?
 
-# 3.Descripciones de archivos
-En primera medida existe un archivo con los de Stack Overflow de 2017 que son necsarios en el momento de la carga de base de datos, en segunda media existe un Archivo .py Jupyter Python, donde en la parte inicial da un bosquejo general de la estructura de la base de datos, en las tres secciones posteriores responde a las preguntas anteriores mediante análisis descriptivos, modelo lineal simple y modelo lineal múltiples con variables categóricas.
+Question 3: What qualitative and quantitative variables influence an employee to have high JobSatisfaction?
 
-# 4.Resultados
-Los principales hallazgos del código se pueden encontrar en la publicación disponible en https://gustavovenegas2010.github.io/Proyecto-1/ .
+# 3.File descriptions
+In first measure there is a file with those of Stack Overflow of 2017 that are necsary at the time of database loading, in second half there is a .py Jupyter Python File, where in the initial part gives a general outline of the structure of the database, in the three subsequent sections answers the previous questions by descriptive analysis, simple linear model and multiple linear model with categorical variables.
 
-# 5.Licencias, autores y reconocimientos
-El autor de este proyecto es Gustavo Venegas Segura, Estadístico con especialización en estadística de la Universidad Nacional de Colombia, que actualmente trabaja en el Banco Davivienda. Agradecimientos especiales a Jorge Andrés Escobar y Udacity por la ayuda brindada en este proyecto.
+# 4. Results
+The main findings of the code can be found in the publication available at https://gustavovenegas2010.github.io/Proyecto-1/ .
+
+# 5. Licenses, authors and acknowledgements
+The author of this project is Gustavo Venegas Segura, Statistician with a specialization in statistics from the National University of Colombia, currently working at Banco Davivienda. Special thanks to Jorge Andrés Escobar and Udacity for their help in this project.
