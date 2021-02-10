@@ -1,26 +1,27 @@
-# Preguntas sobre Satisfacción Laboral de los encuestados de la base Stack Overflow Data - Encuesta de 2017
+# Stack Overflow Data Base Respondents' Job Satisfaction Questions - 2017 Survey.
 
-El conjunto de datos tiene más de 50.000 observaciones y 154 variables. Sobre está base de datos me intereso realizarme las siguientes preguntas: 
+The dataset has more than 50,000 observations and 154 variables. On this data base I was interested in asking myself the following questions: 
 
-Pregunta 1: ¿Cómo se comporta la satisfacción laboral?
+Question 1: How does job satisfaction behave?
 
-Pregunta 2: ¿Si una persona tiene alta satisfacción por un carrera (CareerSatisfaction), también tendrá alta satisfacción por su trabajo (JobSatisfaction)?
+Question 2: If a person has high career satisfaction (CareerSatisfaction), will he/she also have high job satisfaction (JobSatisfaction)?
 
-Pregunta 3: ¿Qué variables cualitativas y cuantitativas influyen para que un empleado tenga una alta satisfacción por su trabajo (JobSatisfaction)?
+Question 3: What qualitative and quantitative variables influence an employee to have high JobSatisfaction?
 
-#### Base df (Resultados de encuesta Pública)
+
+#### Base df (Public survey results)
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/1.PNG)
 
-#### Estadísticos descriptivos Variables Cuantitativas Base de datos df
+#### Descriptive statistics Quantitative Variables Database df
 
-A continuación encontramos que de las 145 variables, 6 son de tipo cuantitativo ya que la columna "Respondent" es una columna de identificador. Se evidencia que la variable "ExpectedSalary" contiene muy pocos datos (2.566) tan solo un 5% de las personas contestaron esa pregunta.
+Next we find that of the 145 variables, 6 are quantitative since the "Respondent" column is an identifier column. It is evident that the variable "ExpectedSalary" contains very little data (2,566) only 5% of the people answered that question.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/2.PNG)
 
 
-## Pregunta 1: ¿Cómo se comporta la satisfacción laboral?
+## Question 1: How does job satisfaction behave?
 
-Se calculo un resumen de estadísticas descriptivas de la variable _JobSatisfaction_, donde se puede visualizar que en promedio la satisfacción laboral es de 6.9 es decir que la mayoría de encuestados tienen buena satisfacción laboral. También se evidencia que el percentil 1 (25%) es 6, por consiguiente el 75% de los encuestados tienen una satisfacción laboral por encima de 6 que es aceptable, como se puede ver en las siguiente tabla, grafico de barras y diagrama caja.
+A summary of descriptive statistics was calculated for the _JobSatisfaction_ variable, where it can be seen that on average job satisfaction is 6.9, which means that most respondents have good job satisfaction. It is also evident that the 1st percentile (25%) is 6, therefore 75% of the respondents have a job satisfaction above 6, which is acceptable, as can be seen in the following table, bar chart and box plot.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/3.PNG)
 
@@ -28,71 +29,68 @@ Se calculo un resumen de estadísticas descriptivas de la variable _JobSatisfact
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/5.PNG)
 
-A continuación se realiza las siguientes tablas comparando la satisfacción laboral con el estado del empleado, el tamaño de la compañía y el país. De aquí se concluye que los empleados con menos satisfacción laboral son los que tienen contratos de tiempo completo.
+The following tables compare job satisfaction with employee status, company size and country. From this we conclude that the employees with the lowest job satisfaction are those with full-time contracts.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/6.PNG)
 
-También se evidencia que los empleados con mayor satisfacción laboral son los que trabajan para empresas con 10 a menos empleados, seguidas de las empresas de 10 a 19 empleados; de aquí se concluye que los de mayor satisfacción laboral son los empleados cuyas empresas cuentas con pocos empleados.
+It is also evident that the employees with the highest job satisfaction are those who work for companies with 10 to fewer employees, followed by companies with 10 to 19 employees; from here it is concluded that those with the highest job satisfaction are employees whose companies have few employees.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/7.PNG)
 
-Dadas las tablas siguientes se concluye que los países con más baja satisfacción laboral son Saint Lucia, Fiji y American Samoa, por el contrario los países con mayor satisfacción laboral son: Macau, Libya y Angola.
+Given the following tables we conclude that the countries with the lowest job satisfaction are Saint Lucia, Fiji and American Samoa, on the contrary the countries with the highest job satisfaction are: Macau, Libya and Angola.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/8.PNG)
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/9.PNG)
 
-## Pregunta 2: ¿Si una persona tiene alta satisfacción por un carrera (CareerSatisfaction), también tendrá alta satisfacción por su trabajo (JobSatisfaction)?
+## Question 2: If a person has high CareerSatisfaction, will he/she also have high JobSatisfaction?
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/10.PNG)
 
-En el diagrama de correlación anterior se muestra que entre las variables cuantitativas la mayor relación lineal se encuentra entre las variables de JobSatisfaction y _CareerSatisfaction_, con una correlación de 0.65. Al tener esta nos indica que existen indicios que entre más Satisfacción por su carrera también tendrá mayor satisfacción por su trabajo. A continuación realizaremos un modelo lineal simple para verificar si esta variable incide y cuál es su impacto?
+The correlation diagram above shows that among the quantitative variables, the highest linear relationship is found between the JobSatisfaction and CareerSatisfaction variables, with a correlation of 0.65. Having this correlation indicates that there are indications that the higher the JobSatisfaction, the higher the JobSatisfaction. Next we will perform a simple linear model to verify if this variable has an impact and what is its impact?
 
 #### Definición base de datos para la realización del modelo.
 
-Dado que el modelo se va realizar únicamente con las variables de JobSatisfaction y _CareerSatisfaction_, realizar una subset a la base con estas dos variables
+Given that the model is going to be made only with the JobSatisfaction and _CareerSatisfaction_ variables, make a subset to the base with these two variables.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/11.PNG)
 
-Dado que la base de datos contiene valores en null procedemos a eliminar las filas con valores null, dejando un total de 40.352 registos para realizar el modelo
+Since the database contains null values, we proceed to eliminate the rows with null values, leaving a total of 40,352 records for the model.
 
 #### Modelo lineal Simple
 
-Después de realizar la regresión lineal simple observamos que el R2 es igual a 0.4170 lo que indica que la variable 'CareerSatisfaction' explica una parte de la variable 'JobSatisfaction', sin embargo después de probar con más variables en ejercicios alternos no logra incrementar su r2, por consiguiente se revisa los estadísticos Prob (F-statistic) y P_value de la variable 'CareerSatisfaction', para determinar si es significativa.
+After performing the simple linear regression we observe that the R2 is equal to 0.4170 which indicates that the variable 'CareerSatisfaction' explains a part of the variable 'JobSatisfaction', however after testing with more variables in alternate exercises it fails to increase its r2, therefore we review the Prob (F-statistic) and P_value statistics of the variable 'CareerSatisfaction', to determine if it is significant.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/12.PNG)
 
-Se evidencia que la probabilidad de la estadística F, Prob(F statistic)=0.00 es menor a 0.05% , con un nivel del 95% podemos rechazar la hipótesis nula (Ho), es decir que el modelo es explicativo, por consiguiente la variable 'CareerSatisfaction' del modelo tiene efecto en la variable de respuesta 'CareerSatisfaction' y también observamos que el p_value (P> t) de la variable 'CareerSatisfaction' es 0.000, menor a 0.05%, es decir que es significativa para el modelo.
+It is evident that the probability of the F statistic, Prob(F statistic)=0.00 is less than 0.05% , with a level of 95% we can reject the null hypothesis (Ho), that is to say that the model is explanatory, therefore the variable 'CareerSatisfaction' of the model has an effect on the response variable 'CareerSatisfaction' and we also observe that the p_value (P> t) of the variable 'CareerSatisfaction' is 0.000, less than 0.05%, that is to say that it is significant for the model.
 
-Por lo anterior se concluye que el grado de satisfacción por una carrera influye en la satisfacción por el trabajo, sin embargo no es suficiente para explicar el la satisfacción por el trabajo, por consiguiente debe existir otras variables que también contribuyan para que la satisfacción por el trabajo sea mayor.
+Therefore, we conclude that the degree of satisfaction with a career has an influence on job satisfaction, but it is not enough to explain job satisfaction; therefore, there must be other variables that also contribute to higher job satisfaction.
 
 
-## Pregunta 3: ¿Qué variables cualitativas y cuantitativas influyen para que un empleado tenga una alta satisfacción por su trabajo (JobSatisfaction)?
+## Question 3: What qualitative and quantitative variables influence an employee to have high job satisfaction (JobSatisfaction)?
 
-Dado que la base de datos contiene más de 140 variables cualitativas, seleccionamos las variables cualitativas que están más relacionadas con las condiciones laboral como lo son: 'EmploymentStatus'_, _'CompanySize' y _'SeriousWork'_, está selección de variables se realiza despendiendo el punto de vista de investigador.
+Since the database contains more than 140 qualitative variables, we selected the qualitative variables that are most related to working conditions such as: 'EmploymentStatus'_, _'CompanySize' and _'SeriousWork'_, this selection of variables is made from the researcher's point of view.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/13.PNG)
 
-Dado que la base de datos contiene valores en null procedemos a eliminar las filas con valores null, quedando con una base de 22498 registros para modelar.
+Since the database contains null values, we proceed to eliminate the rows with null values, leaving us with a database of 22498 records to model.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/14.PNG)
 
-### Modelo lineal Múltiple:
+### Multiple linear model:
 
-Con el objetivo de analizar variables cualitativas en el modelo de regresión lineal múltiple, es necesario convertir cada categoría de cada variable en 1 columna respectivamente, este proceso se conoce como "one-hot encoding".
+In order to analyze qualitative variables in the multiple linear regression model, it is necessary to convert each category of each variable into 1 column respectively, this process is known as "one-hot encoding".
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/15.PNG)
 
-Después de obtener la base, se introduce todas las variables en el modelo con el fin de determinar cúales son las más relevantes.
+After obtaining the base, all the variables are introduced into the model in order to determine which are the most relevant.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/16.PNG)
 
-Después de realizar el modelo, encontramos que existe problemas de multicolinealidad, ya que todas las columnas las ingresamos al modelo. Por consiguiente se realizó varias interacciones seleccionando diferentes variables y el modelo presentado a continuación, es el mejor modelo que itero con un R2 igual a 89.3% y nos indica que las variable de 'EmploymentStatus' es significativa para modelo, es decir que el estado del empleado influye positivamente en la satisfacción del trabajador.
+After running the model, we found that there are multicollinearity problems, since all the columns were entered into the model. Therefore, several interactions were performed selecting different variables and the model presented below is the best model that iterated with an R2 equal to 89.3% and indicates that the 'EmploymentStatus' variable is significant for the model, i.e. the employee's status positively influences the worker's satisfaction.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/17.PNG)
 
-#### Después de realizar queda la pregunta: _¿Qué las otras variables cualitativas son significativas e influyen en la satisfacción laboral de un empleado?_, averígualo replicando este código con otras variables.*
-
-
-
+#### After asking the question: _Which other qualitative variables are significant and influence an employee's job satisfaction?_, find out by replicating this code with other variables.
 
