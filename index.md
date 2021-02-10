@@ -1,5 +1,8 @@
+![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/19.jpeg)
+
 # Stack Overflow Data Base Respondents' Job Satisfaction Questions - 2017 Survey.
 
+ 
 The dataset has more than 50,000 observations and 154 variables. On this data base I was interested in asking myself the following questions: 
 
 Question 1: How does job satisfaction behave?
@@ -24,6 +27,9 @@ Next we find that of the 145 variables, 6 are quantitative since the "Respondent
 A summary of descriptive statistics was calculated for the _JobSatisfaction_ variable, where it can be seen that on average job satisfaction is 6.9, which means that most respondents have good job satisfaction. It is also evident that the 1st percentile (25%) is 6, therefore 75% of the respondents have a job satisfaction above 6, which is acceptable, as can be seen in the following table, bar chart and box plot.
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/3.PNG)
+
+![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/18.PNG)
+
 
 ![](https://raw.githubusercontent.com/gustavovenegas2010/Proyecto-1/main/Imagenes/4.PNG)
 
